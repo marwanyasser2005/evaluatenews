@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Article Sentiment Analyzer</title>
+
+        <!-- Link CSS Files -->
+        <link rel="stylesheet" href="../styles/resets.css">
+        <link rel="stylesheet" href="../styles/base.css">
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/form.css">
+        <link rel="stylesheet" href="../styles/footer.css">
+    </head>
+
+    <body>
+
+        <!-- Header Section -->
+        <header>
+            <div class="logo">
+                <h1>Sentiment Analyzer</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content Section -->
+        <main>
+            <!-- Form Section -->
+            <section id="form-section">
+                <h2>Analyze Article Sentiment</h2>
+                <form id="urlForm">
+                    <label for="urlInput">Enter URL:</label>
+                    <input id="urlInput" type="url" name="url" placeholder="https://example.com" required aria-required="true">
+                    <button id="submitButton" type="submit">Submit</button>
+                </form>
+            </section>
+
+            <!-- Results Section -->
+            <section id="results-section">
+                <h2>Form Results:</h2>
+                <div id="results">No results yet. Submit a URL to see analysis.</div>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2024 Sentiment Analyzer. All Rights Reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+        <!-- JavaScript file -->
+        <script src="src/client/js/app.js"></script>
+    </body>
+</html>

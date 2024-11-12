@@ -1,0 +1,20 @@
+/* Body styling for full viewport height */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    background-color: #f4f4f9;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+}
+
+/* Main section styling */
+main {
+    flex-grow: 1;
+    padding: 30px 20px;
+    width: 100%;
+}
+

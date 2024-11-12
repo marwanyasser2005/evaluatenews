@@ -1,0 +1,88 @@
+/* CSS Reset by Eric Meyer (http://meyerweb.com/eric/tools/css/reset/)
+   Improved and updated for modern use
+   License: Public Domain
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%; /* Set base font size for consistency */
+    line-height: 1.15; /* Improve readability across devices */
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in Safari */
+}
+
+body {
+    line-height: 1.6; /* Improve readability */
+    text-rendering: optimizeSpeed; /* Improve font rendering */
+    font-family: Arial, sans-serif; /* Set default font */
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Inherit color for accessibility and consistency */
+}
+
+img,
+embed,
+object,
+iframe {
+    max-width: 100%;
+    height: auto; /* Make media responsive */
+}
+
+ol,
+ul,
+menu {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: '';
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit; /* Inherit font for consistency across form elements */
+}
+
+address {
+    font-style: normal;
+    color: inherit;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+    display: block;
+}
