@@ -6,14 +6,16 @@ const serverURL = 'http://localhost:8000/api';
 
 // Event listener for form submission
 const form = document.getElementById('urlForm');
-form.addEventListener('submit', handleSubmit);
+if (form) {
+    form.addEventListener('submit', handleSubmit);
+}
 
 // Handle form submission
 function handleSubmit(event) {
     event.preventDefault();
 
     // Get the URL from the input field
-    const formText = document.getElementById('name').value.trim();
+    const formText = document.getElementById('name')?.value.trim();
 
     // Validate the URL
     if (!validateURL(formText)) {
@@ -43,7 +45,7 @@ async function sendDataToServer(url) {
 
         // Parse the JSON response from the server
         const data = await response.json();
-        displayResults(data); // Assuming a function to display server results
+        displayResults(data);
     } catch (error) {
         console.error("Error:", error);
         alert("An error occurred while analyzing the URL. Please try again.");
@@ -53,9 +55,10 @@ async function sendDataToServer(url) {
 // Example function to display server response
 function displayResults(data) {
     const resultDiv = document.getElementById('result');
-    resultDiv.innerText = `Sentiment: ${data.sentiment}`;
+    if (resultDiv) {
+        resultDiv.innerText = `Sentiment: ${data.sentiment}`;
+    }
 }
 
-// Export the handleSubmit function
-export { handleSubmit };
-
+// Export the handleSubmit function for testing purposes
+export { handleSubmit, sendDataToServer, displayResults };
